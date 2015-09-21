@@ -1,0 +1,12 @@
+---
+- hosts: localhost 
+  sudo: yes 
+  
+  tasks: 
+  - name: Install tree
+    apt: name=tree state=installed update_cache=yes 
+
+  #- name: Write tree.conf file
+    #copy: src=/home/vagrant/files/tree.conf  dest=/etc/tree.conf mode=644 owner=root group=root
+
+ 
