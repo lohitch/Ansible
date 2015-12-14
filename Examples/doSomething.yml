@@ -1,7 +1,7 @@
 ---
 - hosts: all 
   tasks:
-    - name: hello world
+    - name: hello world!!!
       command: uname -a
       register: uname
     - debug: var=uname.stdout
